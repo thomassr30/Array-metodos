@@ -30,3 +30,21 @@ const students = [
     course: "Financial Management",
   },
 ];
+
+/*const result = students.map((student, index) => {
+  return {
+    id: index,
+    fullName: student.name + ' ' + student.lastname
+  }
+})*/
+
+const result = students.map((student, index) => {
+  return {
+    ...student, 
+    fullName: student.name + ' ' + student.lastname
+    }
+})
+
+
+console.log(result)
+
