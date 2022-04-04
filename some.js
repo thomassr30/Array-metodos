@@ -8,7 +8,7 @@ const students = [
   {
     name: "John",
     lastname: "Doe",
-    age: 22,
+    age: 25,
     course: "Web Development",
   },
   {
@@ -18,7 +18,7 @@ const students = [
     course: "Accounting",
   },
   {
-    name: "Ryan Jhon",
+    name: "Ryan",
     lastname: "Ray",
     age: 23,
     course: "Web Development",
@@ -30,3 +30,11 @@ const students = [
     course: "Financial Management",
   },
 ];
+
+const result = students.some(student => {
+  if(student.age >24){
+    return true
+  }
+})
+
+console.log(result)
