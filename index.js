@@ -30,3 +30,12 @@ const students = [
     course: "Financial Management",
   },
 ];
+
+const result = students.map(({name, lastname, age}) => ({
+  student: `${name} ${lastname}`,
+  age
+})).filter(student => student.age > 21).sort((a,b) => {
+  return a.age - b.age
+})
+
+console.log(result)
