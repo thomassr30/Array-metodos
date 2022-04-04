@@ -30,3 +30,11 @@ const students = [
     course: "Financial Management",
   },
 ];
+
+const result = students.find(student => {
+  if(student.name === 'Ryan'){
+    return 1;
+  }
+})
+
+console.log(result)
